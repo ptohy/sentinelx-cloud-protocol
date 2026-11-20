@@ -80,6 +80,10 @@ OpType = Literal[
     # registered by an agent whose config declares `local_apis`, so an agent
     # that did not opt in simply has no handler for it.
     "local_api",
+    # Optional root-owned, fixed-operation privileged broker, with one-use
+    # tickets. The agent advertises this op ONLY when explicitly enabled.
+    # Older agents/hubs retain their existing operation set.
+    "privileged_broker",
 ]
 
 
